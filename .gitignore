@@ -41,7 +41,8 @@
 
 config/local.js
 
-
+# environment file
+.env
 
 
 
