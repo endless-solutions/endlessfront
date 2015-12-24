@@ -18,6 +18,16 @@ module.exports = function(grunt) {
 	grunt.config.set('copy', {
 		dev: {
 			files: [{
+			  expand: true,
+			  src: './config.js',
+			  dest: '.tmp/public'
+			},
+			{
+			  expand: true,
+			  src: './jspm_packages/**/*',
+			  dest: '.tmp/public'
+			},
+			{
 				expand: true,
 				cwd: './assets',
 				src: ['**/*.!(coffee|less)'],
@@ -26,6 +36,16 @@ module.exports = function(grunt) {
 		},
 		build: {
 			files: [{
+				expand: true,
+				src: './config.js',
+				dest: '.tmp/public'
+			},
+			{
+				expand: true,
+				src: './jspm_packages/**/*',
+				dest: '.tmp/public'
+			},
+			{
 				expand: true,
 				cwd: '.tmp/public',
 				src: ['**/*'],
