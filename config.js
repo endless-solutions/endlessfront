@@ -9,6 +9,7 @@ System.config({
     ]
   },
   paths: {
+    'build.js': 'build.js', 
     "*": "views/*.js",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
